@@ -15,6 +15,13 @@ export const theme = extendTheme({
     heading: 'Poppins',
     body: 'Poppins',
   },
+  styles: {
+    global: {
+      body: {
+        bg: 'gray.50',
+      },
+    },
+  },
 });
 
 // font-family: 'Barlow', sans-serif;
