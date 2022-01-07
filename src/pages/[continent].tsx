@@ -1,4 +1,14 @@
-import { Box, Flex, Heading, HStack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Icon,
+  Text,
+  Tooltip,
+} from '@chakra-ui/react';
+import { BiInfoCircle } from 'react-icons/bi';
 
 export default function Continent() {
   return (
@@ -64,6 +74,16 @@ export default function Continent() {
             </Text>
             <Text fontSize='24px' fontWeight='semibold'>
               cidades +100
+              <Tooltip hasArrow label='some info' placement='top'>
+                <Box as='span' ml='5px'>
+                  <Icon
+                    as={BiInfoCircle}
+                    fontSize='16px'
+                    color='gray.400'
+                    fontWeight='bold'
+                  />
+                </Box>
+              </Tooltip>
             </Text>
           </Box>
         </HStack>
