@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Link, Text } from '@chakra-ui/react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -31,9 +31,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               Europa
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -41,9 +41,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               América do Sul
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -51,9 +51,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               América do Norte
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -61,9 +61,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               Ásia
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -71,9 +71,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               África
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -81,9 +81,9 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute'>
-            <Heading mb='16px' fontSize='48px'>
+            <Link mb='16px' fontSize='48px'>
               Oceania
-            </Heading>
+            </Link>
             <Text fontSize='24px'>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>

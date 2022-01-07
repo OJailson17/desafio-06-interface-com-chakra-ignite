@@ -61,7 +61,11 @@
       position: absolute;
     }
 
-    h2,
+    a {
+      text-decoration: none;
+    }
+
+    a,
     p {
       color: white;
       font-weight: bold;
