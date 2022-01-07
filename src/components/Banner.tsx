@@ -8,7 +8,7 @@ export const Banner = () => {
       bgImage="url('/assets/background.png')"
       backgroundPosition='center'
       backgroundRepeat='no-repeat'
-      backgroundSize='100%'
+      backgroundSize='100vw'
       position='relative'
       justify='space-around'
       align='center'
