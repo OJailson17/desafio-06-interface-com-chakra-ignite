@@ -11,6 +11,7 @@ import {
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Banner } from '../components/Banner';
+import { Slide } from '../components/Slide/Slide';
 import { TravelType } from '../components/TravelType';
 
 const Home: NextPage = () => {
@@ -38,6 +39,17 @@ const Home: NextPage = () => {
         mt={20}
         mb={12}
       />
+
+      <Flex direction='column' justify='center' align='center' mb={12}>
+        <Heading fontSize={36} fontWeight='medium'>
+          Vamos nessa?
+        </Heading>
+        <Heading fontSize={36} fontWeight='medium'>
+          Então escolha seu continente
+        </Heading>
+      </Flex>
+
+      <Slide />
     </>
   );
 };
