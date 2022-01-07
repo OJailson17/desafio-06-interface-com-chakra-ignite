@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Banner />
 
       <Flex justify='center' mt={20}>
-        <HStack spacing={24}>
+        <HStack spacing={24} w='80%'>
           <TravelType src='/assets/Nightlife.svg' title='Vida Noturna' />
           <TravelType src='/assets/Beach.svg' title='Praia' />
           <TravelType src='/assets/Modern.svg' title='Moderno' />
