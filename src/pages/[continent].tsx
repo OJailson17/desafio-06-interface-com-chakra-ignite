@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Flex,
+  Grid,
   Heading,
   HStack,
   Icon,
@@ -9,6 +10,7 @@ import {
   Tooltip,
 } from '@chakra-ui/react';
 import { BiInfoCircle } from 'react-icons/bi';
+import { City } from '../components/City';
 
 export default function Continent() {
   return (
@@ -88,6 +90,22 @@ export default function Continent() {
           </Box>
         </HStack>
       </Flex>
+
+      {/* Cities */}
+
+      <Box w='80%' m='0 auto'>
+        <Heading fontSize={36} fontWeight='medium' mb='10'>
+          Cidades +100
+        </Heading>
+
+        <Grid mb='10' templateColumns='repeat(4, 1fr)' gap='45' align='center'>
+          <City />
+          <City />
+          <City />
+          <City />
+          <City />
+        </Grid>
+      </Box>
     </>
   );
 }
