@@ -1,10 +1,25 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
 
 export const City = () => {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    md: true,
+  });
+
   return (
-    <Box w='256px' h='279px' borderRadius='4' overflow='hidden'>
+    <Box
+      w={isWideVersion ? '256px' : '100%'}
+      h='279px'
+      borderRadius='4'
+      overflow='hidden'
+    >
       <Box w='100%' h='173px' objectFit='contain' border='none'>
-        <Image src='/assets/Foto.png' alt='cidade' h='100%' />
+        <Image
+          src='https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz'
+          alt='cidade'
+          h='100%'
+          w='100%'
+        />
       </Box>
 
       <Box

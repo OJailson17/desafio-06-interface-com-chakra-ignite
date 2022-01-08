@@ -1,17 +1,11 @@
 import {
-  Box,
-  Center,
   Divider,
   Flex,
   Grid,
   Heading,
-  HStack,
-  Image,
-  Text,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import { Banner } from '../components/Banner';
 import { Slide } from '../components/Slide/Slide';
 import { TravelType } from '../components/TravelType';
