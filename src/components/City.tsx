@@ -26,7 +26,7 @@ export const City = () => {
             </Text>
             <Text
               fontSize='16'
-              fontweight='medium'
+              fontWeight='medium'
               fontFamily='Barlow'
               color='gray.400'
             >

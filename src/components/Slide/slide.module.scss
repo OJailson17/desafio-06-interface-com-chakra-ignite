@@ -46,13 +46,11 @@
     }
 
     :global(.swiper-button-next) {
-      content: '';
       color: #ffba08;
       margin-right: 20px;
     }
 
     :global(.swiper-button-prev) {
-      content: '';
       color: #ffba08;
       margin-left: 20px;
     }
@@ -69,6 +67,28 @@
     p {
       color: white;
       font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 350px;
+    margin-bottom: 30px;
+
+    .swiper {
+      width: 100%;
+
+      :global(.swiper-pagination-bullet) {
+        background-color: white;
+        opacity: 0.5;
+        width: 12px;
+        height: 12px;
+      }
+      :global(.swiper-pagination-bullet-active) {
+        background-color: #ffba08;
+        opacity: 1;
+      }
     }
   }
 }
