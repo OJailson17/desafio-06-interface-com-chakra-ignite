@@ -33,7 +33,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>Europa</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
 
@@ -41,7 +41,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>América do Sul</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
 
@@ -49,7 +49,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>América do Norte</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
 
@@ -57,7 +57,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>Ásia</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
 
@@ -65,7 +65,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>África</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
 
@@ -73,7 +73,7 @@ export const Slide = () => {
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>Oceania</SlideLink>
-            <Text fontSize={['18px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
       </Swiper>

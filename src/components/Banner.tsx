@@ -29,7 +29,7 @@ export const Banner = () => {
       justify='center'
     >
       <Flex
-        w='80%'
+        w={['90%', '80%']}
         h='100%'
         m='0 auto'
         justify='space-between'
@@ -37,10 +37,10 @@ export const Banner = () => {
         position='relative'
       >
         <Box color='gray.50'>
-          <Heading fontWeight='medium' fontSize={['24', '36']}>
+          <Heading fontWeight='medium' fontSize={['20', '36']}>
             5 Continentes, <br /> infinitas possibilidades.
           </Heading>
-          <Text fontSize={['16', '20']} mt='20px' fontWeight='normal'>
+          <Text fontSize={['14', '20']} mt='20px' fontWeight='normal'>
             Chegou a hora de tirar do papel a viagem que você{' '}
             {WideVersion === 'block' && <br />} sempre sonhou.{' '}
           </Text>

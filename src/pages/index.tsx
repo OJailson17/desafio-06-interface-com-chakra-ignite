@@ -12,9 +12,8 @@ import { TravelType } from '../components/TravelType';
 
 const Home: NextPage = () => {
   const isWideVersion = useBreakpointValue({
-    base: '1fr 1fr',
-    md: 'repeat(3, 1fr)',
-    lg: 'repeat(5, 1fr)',
+    base: false,
+    lg: true,
   });
 
   return (
@@ -22,24 +21,30 @@ const Home: NextPage = () => {
       <Banner />
 
       <Grid justify='center' mt={['14', '20']}>
-        <Grid
-          gap={['10', '20']}
-          templateColumns={isWideVersion}
+        <Flex
+          justify='space-around'
+          align='center'
+          direction='row'
+          wrap={isWideVersion ? 'nowrap' : 'wrap'}
           m='0 auto'
           w='80%'
         >
-          <TravelType src='/assets/Nightlife.svg' title='Vida Noturna' />
-          <TravelType src='/assets/Beach.svg' title='Praia' />
+          <TravelType
+            src='/assets/Nightlife.svg'
+            title='Vida Noturna'
+            isFirstRow
+          />
+          <TravelType src='/assets/Beach.svg' title='Praia' isFirstRow />
           <TravelType src='/assets/Modern.svg' title='Moderno' />
           <TravelType src='/assets/Classic.svg' title='Clássico' />
           <TravelType src='/assets/More.svg' title='e mais...' />
-        </Grid>
+        </Flex>
       </Grid>
 
       <Divider
         orientation='horizontal'
         type='solid'
-        w='90px'
+        w={['60px', '90px']}
         h='2px'
         bg='gray.500'
         m='0 auto'
@@ -55,10 +60,10 @@ const Home: NextPage = () => {
         mb={12}
         w='80%'
       >
-        <Heading fontSize={['28', '36']} fontWeight='medium'>
+        <Heading fontSize={['20', '36']} fontWeight='medium'>
           Vamos nessa?
         </Heading>
-        <Heading fontSize={['28', '36']} fontWeight='medium' textAlign='center'>
+        <Heading fontSize={['20', '36']} fontWeight='medium' textAlign='center'>
           Então escolha seu continente
         </Heading>
       </Flex>
