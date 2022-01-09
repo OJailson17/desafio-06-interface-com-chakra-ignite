@@ -32,7 +32,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/europe-image.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>Europa</SlideLink>
+            <SlideLink href='/europe'>Europa</SlideLink>
             <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
           </Box>
         </SwiperSlide>
@@ -40,7 +40,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/southamerica.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>América do Sul</SlideLink>
+            <SlideLink href='/south-america'>América do Sul</SlideLink>
             <Text fontSize={['14px', '24px']}>
               O continente mais hospitaleiro.
             </Text>
@@ -50,7 +50,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/northamerica.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>América do Norte</SlideLink>
+            <SlideLink href='north-america'>América do Norte</SlideLink>
             <Text fontSize={['14px', '24px']}>
               O continente com roteiros cinematográficos.
             </Text>
@@ -60,7 +60,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/asia.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>Ásia</SlideLink>
+            <SlideLink href='/asia'>Ásia</SlideLink>
             <Text fontSize={['14px', '24px']}>O continente mais exótico.</Text>
           </Box>
         </SwiperSlide>
@@ -68,7 +68,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/africa.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>África</SlideLink>
+            <SlideLink href='/africa'>África</SlideLink>
             <Text fontSize={['14px', '24px']}>
               Um continente surpreendente e encantador.
             </Text>
@@ -78,7 +78,7 @@ export const Slide = () => {
         <SwiperSlide className={styles['swiper-slide']}>
           <Image src='/assets/oceania.png' alt='europa' />
           <Box position='absolute' w='70%'>
-            <SlideLink>Oceania</SlideLink>
+            <SlideLink href='/oceania'>Oceania</SlideLink>
             <Text fontSize={['14px', '24px']}>
               Um continente cheio de metrópoles animadas.
             </Text>
