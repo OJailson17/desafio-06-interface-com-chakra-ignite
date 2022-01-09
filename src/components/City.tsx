@@ -1,6 +1,13 @@
 import { Box, Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
 
-export const City = () => {
+type CityProps = {
+  imageSrc: string;
+  city: string;
+  country: string;
+  countryFlag: string;
+};
+
+export const City = ({ imageSrc, city, country, countryFlag }: CityProps) => {
   const isWideVersion = useBreakpointValue({
     base: false,
     md: true,
@@ -15,12 +22,7 @@ export const City = () => {
       m='0 auto'
     >
       <Box w='100%' h='173px' objectFit='contain' border='none'>
-        <Image
-          src='https://london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz'
-          alt='cidade'
-          h='100%'
-          w='100%'
-        />
+        <Image src={imageSrc} alt='cidade' h='100%' w='100%' />
       </Box>
 
       <Box
@@ -38,7 +40,7 @@ export const City = () => {
               fontFamily='Barlow'
               color='gray.500'
             >
-              Londres
+              {city}
             </Text>
             <Text
               fontSize='16'
@@ -46,16 +48,11 @@ export const City = () => {
               fontFamily='Barlow'
               color='gray.400'
             >
-              Reino Unido
+              {country}
             </Text>
           </Box>
 
-          <Image
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/United-kingdom_flag_icon_round.svg/1200px-United-kingdom_flag_icon_round.svg.png'
-            alt='flag'
-            w='30px'
-            h='30px'
-          />
+          <Image src={countryFlag} alt='flag' w='30px' h='30px' />
         </Flex>
       </Box>
     </Box>

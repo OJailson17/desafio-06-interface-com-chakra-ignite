@@ -140,11 +140,36 @@ export default function Continent() {
         </Heading>
 
         <Grid mb='10' templateColumns={cityContainer} gap='45' align='center'>
-          <City />
-          <City />
-          <City />
-          <City />
-          <City />
+          <City
+            imageSrc='/assets/london.png'
+            city='Londres'
+            country='Reino Unido'
+            countryFlag='/assets/uk.png'
+          />
+          <City
+            imageSrc='/assets/paris.png'
+            city='Paris'
+            country='França'
+            countryFlag='/assets/fra.png'
+          />
+          <City
+            imageSrc='/assets/roma.png'
+            city='Roma'
+            country='Itália'
+            countryFlag='/assets/ita.png'
+          />
+          <City
+            imageSrc='/assets/praga.png'
+            city='Praga'
+            country='República Tcheca'
+            countryFlag='/assets/check.png'
+          />
+          <City
+            imageSrc='/assets/amsterda.png'
+            city='Amsterdã'
+            country='Holanda'
+            countryFlag='/assets/hol.png'
+          />
         </Grid>
       </Box>
     </>
