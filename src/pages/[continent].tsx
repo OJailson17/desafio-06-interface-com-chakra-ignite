@@ -35,13 +35,16 @@ export default function Continent() {
         backgroundRepeat='no-repeat'
         backgroundSize={isWideVersion ? '100%' : ''}
         position='relative'
+        align={isWideVersion ? '' : 'center'}
       >
         <Flex w='80%' m='0 auto' direction='column' justify='flex-end'>
           <Heading
             color='gray.50'
             fontWeight='semibold'
-            fontSize={['36px', '48px']}
-            mb={14}
+            fontSize={['28px', '48px']}
+            mb={isWideVersion ? 14 : ''}
+            justify={isWideVersion ? '' : 'center'}
+            align={isWideVersion ? '' : 'center'}
           >
             Europa
           </Heading>
@@ -50,18 +53,18 @@ export default function Continent() {
 
       <Flex
         align='center'
-        w='80%'
+        w={['90%', '80%']}
         justify='space-between'
         flexDirection={isWideVersion ? 'row' : 'column'}
         m='0 auto'
-        mt='80px'
+        mt={['24px', '80px']}
         mb='80px'
       >
         <Box
           w={isWideVersion ? '50%' : '100%'}
           mr={isWideVersion ? '70px' : ''}
         >
-          <Text fontSize={['20px', '24px']} textAlign='justify'>
+          <Text fontSize={['14px', '24px']} textAlign='justify'>
             A Europa é, por convenção, um dos seis continentes do mundo.
             Compreendendo a península ocidental da Eurásia, a Europa geralmente
             divide-se da Ásia a leste pela divisória de águas dos montes Urais,
@@ -73,38 +76,44 @@ export default function Continent() {
           <Flex alignItems='center' justify='center' direction='column'>
             <Text
               color='yellow.400'
-              fontSize={['36px', '48px']}
+              fontSize={['24px', '48px']}
               fontWeight='semibold'
             >
               50
             </Text>
-            <Text fontSize={['18px', '24px']} fontWeight='semibold'>
+            <Text
+              fontSize={['18px', '24px']}
+              fontWeight={['normal', 'semibold']}
+            >
               países
             </Text>
           </Flex>
           <Flex alignItems='center' justify='center' direction='column'>
             <Text
               color='yellow.400'
-              fontSize={['36px', '48px']}
+              fontSize={['24px', '48px']}
               fontWeight='semibold'
             >
               60
             </Text>
-            <Text fontSize={['18px', '24px']} fontWeight='semibold'>
+            <Text
+              fontSize={['18px', '24px']}
+              fontWeight={['normal', 'semibold']}
+            >
               línguas
             </Text>
           </Flex>
           <Flex alignItems='center' justify='center' direction='column'>
             <Text
               color='yellow.400'
-              fontSize={['36px', '48px']}
+              fontSize={['24px', '48px']}
               fontWeight='semibold'
             >
               27
             </Text>
             <Text
               fontSize={['18px', '24px']}
-              fontWeight='semibold'
+              fontWeight={['normal', 'semibold']}
               textAlign='center'
             >
               cidades +100
@@ -112,7 +121,7 @@ export default function Continent() {
                 <Box as='span' ml='5px'>
                   <Icon
                     as={BiInfoCircle}
-                    fontSize='16px'
+                    fontSize={['10px', '16px']}
                     color='gray.400'
                     fontWeight='bold'
                   />

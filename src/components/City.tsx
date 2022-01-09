@@ -8,10 +8,11 @@ export const City = () => {
 
   return (
     <Box
-      w={isWideVersion ? '256px' : '100%'}
+      w={isWideVersion ? '256px' : '80%'}
       h='279px'
       borderRadius='4'
       overflow='hidden'
+      m='0 auto'
     >
       <Box w='100%' h='173px' objectFit='contain' border='none'>
         <Image
