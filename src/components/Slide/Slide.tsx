@@ -41,7 +41,9 @@ export const Slide = () => {
           <Image src='/assets/southamerica.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>América do Sul</SlideLink>
-            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>
+              O continente mais hospitaleiro.
+            </Text>
           </Box>
         </SwiperSlide>
 
@@ -49,7 +51,9 @@ export const Slide = () => {
           <Image src='/assets/northamerica.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>América do Norte</SlideLink>
-            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>
+              O continente com roteiros cinematográficos.
+            </Text>
           </Box>
         </SwiperSlide>
 
@@ -57,7 +61,7 @@ export const Slide = () => {
           <Image src='/assets/asia.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>Ásia</SlideLink>
-            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>O continente mais exótico.</Text>
           </Box>
         </SwiperSlide>
 
@@ -65,7 +69,9 @@ export const Slide = () => {
           <Image src='/assets/africa.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>África</SlideLink>
-            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>
+              Um continente surpreendente e encantador.
+            </Text>
           </Box>
         </SwiperSlide>
 
@@ -73,7 +79,9 @@ export const Slide = () => {
           <Image src='/assets/oceania.png' alt='europa' />
           <Box position='absolute' w='70%'>
             <SlideLink>Oceania</SlideLink>
-            <Text fontSize={['14px', '24px']}>O continente mais antigo.</Text>
+            <Text fontSize={['14px', '24px']}>
+              Um continente cheio de metrópoles animadas.
+            </Text>
           </Box>
         </SwiperSlide>
       </Swiper>
